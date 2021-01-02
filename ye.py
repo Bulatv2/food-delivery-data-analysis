@@ -2,7 +2,6 @@ import json
 
 with open("yedata.json", "r") as file:
     text = json.load(file)
-    print(text)
 
 for i in text["cafe"]:
     print("cafe ", min(i["price"]), sum(i["price"]) // len(i["price"]), max(i["price"]), len(i["price"]), sum(i["price"]))
