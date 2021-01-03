@@ -1,2 +1,2 @@
 # food-delivery-data-analysis
-# small data analysis from macdonalds, burgerking and other cafe
+# small data analysis from macdonalds, burgerking and other cafes
