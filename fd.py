@@ -5,20 +5,23 @@ with open("fddata.json", "r") as file:
     #print(text)
 for i in text["cafe"]:
     print("cafe ", min(i["price"]), sum(i["price"]) // len(i["price"]), max(i["price"]), len(i["price"]), sum(i["price"]))
+    sorted(i.values())
     for j in i.keys():
         if j != "price":
             print("{} - {}".format(j, len(i[j])))
         else:
             continue
 for i in text["burgerking"]:
-    print("burgerking ", min(i["price"]), sum(i["price"]) // len(i["price"]), max(i["price"]), len(i["price"]),sum(i["price"]) )
+    print("burgerking ", min(i["price"]), sum(i["price"]) // len(i["price"]), max(i["price"]), len(i["price"]),sum(i["price"]))
+    sorted(i.values())
     for j in i.keys():
         if j != "price":
             print("{} - {}".format(j, len(i[j])))
         else:
             continue
 for i in text["macdonalds"]: 
-    print("macdonalds ", min(i["price"]), sum(i["price"]) // len(i["price"]), max(i["price"]), len(i["price"]),sum(i["price"]) )
+    print("macdonalds ", min(i["price"]), sum(i["price"]) // len(i["price"]), max(i["price"]), len(i["price"]),sum(i["price"]))
+    sorted(i.values())
     for j in i.keys():
         if j != "price":
             print("{} - {}".format(j, len(i[j])))
