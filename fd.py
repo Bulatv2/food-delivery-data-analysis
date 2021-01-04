@@ -35,9 +35,9 @@ for i in text["macdonalds"]:
             d3[j] = sum(i[j])
         else:
             continue
-    listd2 = list(d2.items())
-    listd2.sort(key = lambda i: i[1])
-    for i in listd2:
+    listd3 = list(d3.items())
+    listd3.sort(key = lambda i: i[1])
+    for i in listd3:
         print(i[0], "-", i[1])
 for i in text["cafe"]:
     p1 = len(i["price"])
