@@ -8,7 +8,7 @@ for i in text["cafe"]:
     sorted(i.values())
     for j in i.keys():
         if j != "price":
-            print("{} - {}".format(j, len(i[j])))
+            print("{} - {}".format(j, sum(i[j])))
         else:
             continue
 for i in text["burgerking"]:
@@ -16,7 +16,7 @@ for i in text["burgerking"]:
     sorted(i.values())
     for j in i.keys():
         if j != "price":
-            print("{} - {}".format(j, len(i[j])))
+            print("{} - {}".format(j, sum(i[j])))
         else:
             continue
 for i in text["macdonalds"]: 
@@ -24,7 +24,7 @@ for i in text["macdonalds"]:
     sorted(i.values())
     for j in i.keys():
         if j != "price":
-            print("{} - {}".format(j, len(i[j])))
+            print("{} - {}".format(j, sum(i[j])))
         else:
             continue
 for i in text["cafe"]:
