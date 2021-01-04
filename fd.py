@@ -4,29 +4,41 @@ with open("fddata.json", "r") as file:
     text = json.load(file)
     #print(text)
 for i in text["cafe"]:
+    d1 = {}
     print("cafe ", min(i["price"]), sum(i["price"]) // len(i["price"]), max(i["price"]), len(i["price"]), sum(i["price"]))
-    sorted(i.values())
     for j in i.keys():
         if j != "price":
-            print("{} - {}".format(j, sum(i[j])))
+            d1[j] = sum(i[j])
         else:
             continue
+    listd1 = list(d1.items())
+    listd1.sort(key = lambda i: i[1])
+    for i in listd1:
+        print(i[0], "-", i[1])
 for i in text["burgerking"]:
     print("burgerking ", min(i["price"]), sum(i["price"]) // len(i["price"]), max(i["price"]), len(i["price"]),sum(i["price"]))
-    sorted(i.values())
+    d2 = {}
     for j in i.keys():
         if j != "price":
-            print("{} - {}".format(j, sum(i[j])))
+            d2[j] = sum(i[j])
         else:
             continue
+    listd2 = list(d2.items())
+    listd2.sort(key = lambda i: i[1])
+    for i in listd2:
+        print(i[0], "-", i[1])
 for i in text["macdonalds"]: 
     print("macdonalds ", min(i["price"]), sum(i["price"]) // len(i["price"]), max(i["price"]), len(i["price"]),sum(i["price"]))
-    sorted(i.values())
+    d3 = {}
     for j in i.keys():
         if j != "price":
-            print("{} - {}".format(j, sum(i[j])))
+            d3[j] = sum(i[j])
         else:
             continue
+    listd2 = list(d2.items())
+    listd2.sort(key = lambda i: i[1])
+    for i in listd2:
+        print(i[0], "-", i[1])
 for i in text["cafe"]:
     p1 = len(i["price"])
     s1 = sum(i["price"])
